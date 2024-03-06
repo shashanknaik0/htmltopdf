@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+}
+
+#pdf {
+    margin: auto;
+    width: 100%;
+    padding: 25px;
+    height: 1120px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    font-size: 12px;
+    position: relative;
+    line-height: 1.3em;
+    box-sizing: border-box;
+}
+
+.head{
+    margin: 20px 0;
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+sup{
+    font-size: 15px;
+}
+
+#logo{
+    font-size: 24px;
+}
+
+.upper-content{
+    margin: 25px 0;
+}
+
+.table td,
+.table th {
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
+.table th {
+    padding: 5px;
+    text-align: left;
+    background-color: #000000;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table div{
+    margin-top: 15px;
+}
+
+.table, .clarify, .sign{
+    margin: 25px 0;
+}
+
+.sign td {
+    padding-top: 10px;
+    text-align: left;
+}
+.sign th{
+    text-align: left;
+    font-weight: bolder;
+}
+.sign{
+    padding: 5px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+.sign img{
+    height: 70px;
+}
+
+.note{
+    margin-top: 40px;
+}
+
+b{
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 810px) {
+    #pdf{
+        width: 100%;
+        height: auto;
+    }
+  }
