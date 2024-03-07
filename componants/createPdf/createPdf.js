@@ -1,19 +1,15 @@
-import pdf from 'html-pdf';
+import puppeteer from 'puppeteer';
 
-const createPdf = (htmlContent) => {
-    const pdfOptions = {
-        format: 'A4',
-        base: '/',
-        version: '1.5'
-    };
+const createPdf = async (htmlContent) => {
+        const browser = await puppeteer.launch();
+        const page = await browser.newPage();
+        const outputFilePath = 'output.pdf';
 
-    const outputFilePath = 'output.pdf'
+        await page.setContent(htmlContent);
 
-    pdf.create(htmlContent, pdfOptions)
-        .toFile(outputFilePath, (err, res) => {
-            if (err) return console.error('Error generating PDF:', err);
-            console.log('PDF generated successfully:', res);
-        });
+        await page.pdf({ path: outputFilePath, format: 'A4', printBackground:true });
+
+        await browser.close();
 }
 
 export default createPdf;

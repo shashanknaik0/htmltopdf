@@ -10,7 +10,7 @@ body {
     margin: auto;
     width: 100%;
     padding: 25px;
-    height: 1120px;
+    height: auto;
     box-sizing: border-box;
     background-color: #ffffff;
     font-family: sans-serif;
@@ -60,7 +60,7 @@ table {
 }
 
 .table, .clarify, .sign{
-    margin: 25px 0;
+    margin: 20px 0;
 }
 
 .sign td {
@@ -82,7 +82,7 @@ table {
 }
 
 .note{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 b{
@@ -105,10 +105,10 @@ b{
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LMN - Carnivore Bar - High Cholesterol</title>
+    <style>
+        ${cssStyle}
+    </style>
 </head>
-<style>
-${cssStyle}
-</style>
 <body>
     <div id="pdf">
         <div class="head">

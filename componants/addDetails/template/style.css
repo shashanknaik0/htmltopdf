@@ -6,9 +6,9 @@ body {
 
 #pdf {
     margin: auto;
-    width: 100%;
+    width: 790px;
     padding: 25px;
-    height: 1120px;
+    height: auto;
     box-sizing: border-box;
     background-color: #ffffff;
     font-family: sans-serif;
